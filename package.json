@@ -1,0 +1,37 @@
+{
+    "name": "electron-p5js-template",
+    "version": "1.0.0",
+    "description": "A minimal Electron application running a p5.js sketch",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "pack": "build --dir",
+        "dist": "build",
+        "postinstall": "install-app-deps",
+        "build": ".\\node_modules\\kinect2\\tools\\electronbuild.js --target=1.4.13 --arch=x64",
+        "package": "electron-packager ."
+    },
+    "repository": "https://github.com/ladynobeard/kinectv2",
+    "keywords": [
+        "Electron",
+        "quick",
+        "start",
+        "tutorial",
+        "demo",
+        "p5.js"
+    ],
+    "author": "ladynobeard",
+    "license": "tbd",
+    "devDependencies": {
+        "electron": "^1.4.1",
+        "electron-builder": "20.2.0",
+        "electron-reload": "^1.2.2",
+        "async": "^2.6.0",
+        "electron-packager": "^11.1.0",
+        "kinect2": "^0.1.5",
+        "minimist": "^1.2.0",
+        "node-gyp": "^3.6.2",
+        "os": "^0.1.1",
+        "peer": "^0.2.8"
+    }
+}
